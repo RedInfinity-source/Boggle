@@ -1,10 +1,11 @@
+# imports
 import random
-
 import ursina
 from ursina import *
 import enchant
 from PyDictionary import PyDictionary
 
+# the english dictionary 
 dict = PyDictionary()
 d = enchant.Dict("en_US")
 
@@ -13,6 +14,7 @@ ursina.SmoothFollow = True
 def update():
     global SC, MM
     if end_game == False:
+        # this is the timmer sc = secounds, mm = minits
         # timer
         SC += 1
         if SC == 60:
@@ -45,7 +47,7 @@ end_game = False
 MM,SC = 0,0
 timer = Text(text = '{}:{}'.format(MM,SC),position=(0,0.4),scale = 2,color = color.black)
 
-# letter
+# the letter desplaed on the bord
 points = 0
 Points = Text(text = 'points: {}'.format(points),position=(-0.05,0.35),scale = 2)
 class Letter(Button):
