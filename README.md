@@ -7,7 +7,7 @@ The code is a Python word game using the Ursina game engine. It generates a 4x4 
 - [About](#about)
 - [Features](#features)
 - [Imports](#Imports)
-- [Rating: 6/10](#Rating)
+- [Ratting: 6/10](#Ratting)
 
 ## About
 
@@ -17,6 +17,6 @@ The code is a Python word game that uses the Ursina game engine to generate a 4x
 
 random, ursina, enchant, PyDictionary
 
-# Rating
+# Ratting
 
 The game has a clear objective, a timer, and rewards points based on word length. It uses tooltips for word definitions and feedback. The graphical interface is simple. However, it could benefit from better organization, modularization, clearer variable names, improved error handling, and clearer feedback. It also lacks sound effects or music, and could benefit from more appealing graphics and animations.
