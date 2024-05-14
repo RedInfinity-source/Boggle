@@ -245,7 +245,7 @@ def CalculatePoints(words_list):
 
     for word in words_list:
         for normalized_word in word:
-            normalized_word = word.lower()
+            normalized_word = normalized_word.lower()
             if len(normalized_word) >= 3 and normalized_word not in repeated_words and has_unique_letters(normalized_word):
                 if normalized_word in word_list:
                     if boardCheck(normalized_word):
@@ -291,11 +291,11 @@ def main():
             # MultiLine Input
             show_MultiLineInput.draw(screen)
             # end round
-            if ss - last_minute > 3:
+            if mm - last_minute > 3:
                 turns += 1
                 playerPoints += CalculatePoints(show_MultiLineInput.read_words_per_line())
                 computerPoints += CalculatePoints(generate_words())
-                last_minute = ss
+                last_minute = mm
                 for letter in letters_list:
                     letter.updateText(random.choice(show_letter.abc).upper())
             # change endGame state
