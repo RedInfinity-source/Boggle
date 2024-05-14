@@ -1,6 +1,6 @@
 # Boggle
 
-The code is a Python word game using the Ursina game engine. It generates a 4x4 grid of cubes with random alphabet letters, players input words, and the game checks if the word is valid. If valid, players earn points based on length and letter scores. The game includes a timer, points counter, grid, input field, submit button, and word validation logic. Players aim to maximize their score by forming valid words.
+The script creates a digital version of the classic "Boggle" game using Pygame library. Players and the computer alternate finding words on a randomly generated 4x4 grid of letters. Key features include random grid generation, word validation, points calculation, and a graphical interface using Pygame. The game includes a timer, turn-based gameplay, and a restart button.
 
 ## Table of Contents
 
@@ -11,17 +11,11 @@ The code is a Python word game using the Ursina game engine. It generates a 4x4 
 
 # About
 
-The code is a Python word game that uses the Ursina game engine to generate a 4x4 grid of cubes with random alphabet letters. Players input words using an input field and submit them to the game. The game checks if the word is valid (at least 3 letters long and exists in the English dictionary), and if it is, the player earns points based on the word's length and letter scores. The game includes a timer, points counter, grid of cubes, input field, submit button, and word validation and scoring logic. The game continues until the time limit is reached, and players aim to maximize their score by forming valid words using the available letters.
+This script creates a digital version of the classic word game "Boggle" using the Pygame library. Players and the computer play a turn-based game on a randomly generated 4x4 grid of letters. The game features a grid of letters, word input, points system, timer, turn-based gameplay, and a restart button. Key features include random grid generation, word validation, and points calculation based on word length and specific conditions. The game uses Pygame to create a graphical interface with buttons and text displays. The game is designed to be fun and engaging for both players and the computer.
 
 # Features
 
-The Ursina game engine is a Python-powered, open-source game engine built on top of the Panda3D game engine. Key features include hot reloading, automatic import, fullscreen development, procedural geometry, built-in animation and tweening, pre-made prefabs, procedural 3D primitives, and custom shaders.
-
-The game mechanics include a 4x4 grid of cubes with random alphabet letters, an input field for players to input words, a submit button for word submission, word validation, scoring logic, timer and points counter, game flow, and user interface (UI). Players aim to maximize their score by forming valid words using available letters.
-
-User interface (UI) should be clean and intuitive, using Ursina's capabilities to create sleek and modern elements. Edge cases, such as handling invalid words, displaying feedback, and providing a satisfying user experience, should be handled.
-
-For more details on implementing specific features or troubleshooting, refer to the Ursina documentation at https://www.ursinaengine.org/. Your Python word game has the potential to be both fun and educational, and you can find more information on implementing specific features or troubleshooting by visiting the Ursina documentation.
+The "Boggle" game, implemented using the Pygame library, features a 4x4 grid of random letters, word input, a points system, a timer, turn-based gameplay, a restart button, random grid generation, word validation, points calculation, and a visual interface. Players input words by selecting adjacent letters on the grid, and the game validates the entered words. Points are awarded based on word length and specific conditions, such as bonus points for longer words. A countdown timer keeps track of the remaining time for each turn, requiring players to find as many valid words as possible within the time limit. The game alternates between player and computer turns, and players can restart the game at any point to generate a new grid. The game also checks word validity according to Boggle rules, and points are calculated based on word length and specific conditions. Pygame is used to create buttons, text displays, and an interactive interface for a visually appealing experience.
 
 # Imports
 
@@ -29,7 +23,4 @@ random, ursina, enchant, PyDictionary
 
 # Rating
 
-The code provides an interactive word game where players create words from randomly generated letters displayed on a grid. It integrates with external libraries like `enchant` and `PyDictionary` for word checking and definitions. The code effectively interacts with the user through console input/output and graphical user interface elements, prompting them for word submissions, providing feedback on word validity, and updating the game state accordingly.
-The code is relatively modular, with separate classes for different game elements such as letters, words, and the input field. This modular design enhances code readability and maintainability. The game can potentially scale by adding more features, such as difficulty levels, scoring systems, or multiplayer functionality, due to its structured design and use of object-oriented programming principles.
-However, there are some cons to the code. Variable naming can lead to confusion and potential conflicts, especially when using common names like built-in types or functions. Global variables like `end_game`, `letter_list`, and `cube_list` could lead to issues with maintainability and readability, especially as the codebase grows. Refactoring repetitive sections into reusable functions or methods could improve code readability and reduce redundancy.
-Additional improvement suggestions include renaming variables, refactoring global variables, eliminating code redundancy, and implementing error handling mechanisms. Try-except blocks or conditional statements can detect and handle errors gracefully, providing informative error messages to the user when necessary.
+This game offers educational value for vocabulary and spelling skills, with turn-based gameplay and random grid generation. It uses libraries like NLTK for word validation and Pygame for graphical interface. However, it has limited functionality, could benefit from additional features like grid sizes and multiplayer capabilities. The user interface needs improvement, and potential bugs may occur. Recommendations include enhanced UI/UX, additional features like difficulty levels and grid sizes, bug fixes, and performance optimization for smoother gameplay. The game's potential for improvement is significant, but further improvements are needed.
