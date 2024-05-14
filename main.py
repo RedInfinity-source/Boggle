@@ -13,7 +13,7 @@ word_list = set(words.words())
 # Seting up the display
 WIDTH, HEIGHT = 700, 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Pygame Window")
+pygame.display.set_caption("Boggle")
 clock = pygame.time.Clock()
 
 # color
