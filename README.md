@@ -6,7 +6,7 @@
 [![Static Badge](https://img.shields.io/badge/time-tan)](https://pypi.org/project/TIME-python/)
 [![Static Badge](https://img.shields.io/badge/nltk-peru)](https://pypi.org/project/nltk/)
 
-The script creates a digital version of the classic "Boggle" game using Pygame library. Players and the computer alternate finding words on a randomly generated 4x4 grid of letters. Key features include random grid generation, word validation, points calculation, and a graphical interface using Pygame. The game includes a timer, turn-based gameplay, and a restart button.
+The project uses Pygame to digitally execute Boggle, a classic word game where players form words from adjacent letters, competing against a computer to find valid words within a set time.
 
 ## Table of Contents
 
@@ -14,43 +14,69 @@ The script creates a digital version of the classic "Boggle" game using Pygame l
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Rating: 7/10](#Rating)
+- [Contributing](#contributing)
+- [License](#license)
 
-# About
+## About
 
-This script creates a digital version of the classic word game "Boggle" using the Pygame library. Players and the computer play a turn-based game on a randomly generated 4x4 grid of letters. The game features a grid of letters, word input, points system, timer, turn-based gameplay, and a restart button. Key features include random grid generation, word validation, and points calculation based on word length and specific conditions. The game uses Pygame to create a graphical interface with buttons and text displays. The game is designed to be fun and engaging for both players and the computer.
+The project is a digital version of Boggle, a word game developed using Pygame. Players form words from adjacent letters on a random 4x4 board, competing against a computer to find as many valid words as possible within a set time.
 
-# Features
+## Features
 
-The "Boggle" game, implemented using the Pygame library, features a 4x4 grid of random letters, word input, a points system, a timer, turn-based gameplay, a restart button, random grid generation, word validation, points calculation, and a visual interface. Players input words by selecting adjacent letters on the grid, and the game validates the entered words. Points are awarded based on word length and specific conditions, such as bonus points for longer words. A countdown timer keeps track of the remaining time for each turn, requiring players to find as many valid words as possible within the time limit. The game alternates between player and computer turns, and players can restart the game at any point to generate a new grid. The game also checks word validity according to Boggle rules, and points are calculated based on word length and specific conditions. Pygame is used to create buttons, text displays, and an interactive interface for a visually appealing experience.
+- Random Letter Board: A 4x4 grid of randomly generated letters.
+- Word Validation: Ensures words are valid based on a dictionary from NLTK.
+- Multiline Input: Allows players to input multiple words.
+- Timer: Tracks the time for each round.
+- Scoring System: Calculates points for valid words based on their length and complexity.
+- Computer Opponent: Competes against the player by generating its own words.
+- Restart Button: Allows the player to restart the game.
 
-# Installation
-1) HTTPS - Statute8234/Boggle.git
-2) CLONE - Statute8234/Boggle
+## Installation
 
-# Usage
+Prerequisites
+- Python 3.6 or higher
+- Reddit API credentials
+- Wikipedia API library
+- Holidays library
+- Pycountry library
 
-To use a Pygame Boggle game on GitHub, follow these steps:
+Prerequisites
+- Python 3.x
+- Pygame
+- NLTK
 
-1. Create a new GitHub repository with a name and optional description. Initialize it with a README file if desired.
-2. Clone the repository to your local machine using the `git clone` command.
-3. Add your script to the cloned repository directory by creating a new Python file (e.g., `boggle_game.py`) and paste it into this file. Save the file.
-4. Install required libraries by creating a `requirements.txt` file listing all the dependencies your script needs. In this case, the required libraries are `pygame` and `nltk`.
-5. Add, commit, and push changes to GitHub by adding the files to the staging area, committing the changes, and pushing the changes to GitHub.
-6. Update the README file (optional) to provide information about your project, how to run it, and any other relevant details.
+## Usage
 
-Your final directory structure should look like this:
+Run the game:
+- python main.py
 
-Pygame-Boggle-Game/
-│
-├──── README.md
-├──── boggle_game.py
-└── requirements.txt
+Playing the game:
+- The game starts with a random 4x4 letter board.
+- Enter words using the multiline input box.
+- Words must be at least 3 letters long and formed from adjacent letters.
+- Press the "Play" button to start a new game.
+- The game automatically ends a round every 3 minutes and updates the scores.
+- The game continues until either the player or the computer reaches the target score (50 or 100 points).
 
-Installation involves cloning the repository, installing the required libraries, downloading NLTK data, and running the game.
+## Contributing
 
-To play the game, use the input field to enter words and press "Enter" to submit them. Points are awarded based on the length of the words.
+Contributions are welcome! To contribute to Monster Maze, follow these steps:
 
-# Rating
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create a new Pull Request.
 
-This game offers educational value for vocabulary and spelling skills, with turn-based gameplay and random grid generation. It uses libraries like NLTK for word validation and Pygame for graphical interface. However, it has limited functionality, could benefit from additional features like grid sizes and multiplayer capabilities. The user interface needs improvement, and potential bugs may occur. Recommendations include enhanced UI/UX, additional features like difficulty levels and grid sizes, bug fixes, and performance optimization for smoother gameplay. The game's potential for improvement is significant, but further improvements are needed.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
