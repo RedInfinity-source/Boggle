@@ -1,12 +1,10 @@
 # Boggle
-
-[![Static Badge](https://img.shields.io/badge/pygame-snow)](https://pypi.org/project/pygame/)
-[![Static Badge](https://img.shields.io/badge/random-azure)](https://pypi.org/project/random-number/)
-[![Static Badge](https://img.shields.io/badge/sys-linen)](https://pypi.org/project/os-sys/)
-[![Static Badge](https://img.shields.io/badge/time-tan)](https://pypi.org/project/TIME-python/)
-[![Static Badge](https://img.shields.io/badge/nltk-peru)](https://pypi.org/project/nltk/)
-
 The project uses Pygame to digitally execute Boggle, a classic word game where players form words from adjacent letters, competing against a computer to find valid words within a set time.
+
+[![Static Badge](https://img.shields.io/badge/nltk-orange)](https://pypi.org/project/nltk/)
+[![Static Badge](https://img.shields.io/badge/random,-green)](https://pypi.org/project/random,/)
+[![Static Badge](https://img.shields.io/badge/pygame-gray)](https://pypi.org/project/pygame/)
+[![Static Badge](https://img.shields.io/badge/nltk-pink)](https://pypi.org/project/nltk/)
 
 ## Table of Contents
 
